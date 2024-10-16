@@ -1,5 +1,10 @@
 :root {
+
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+
+    --navbar-height: 34px;
+    --header-height: 120px;
+    --header-with-search-height: calc(var(--navbar-height)-var(--header-height));
 }
