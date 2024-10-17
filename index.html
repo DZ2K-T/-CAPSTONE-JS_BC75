@@ -83,14 +83,13 @@
                         <div class="header__search-select">
                             <span class="header__search-select-lable">Danh mục</span>
                             <i class="header__search-select-icon fa-solid fa-angle-down"></i>
-
                             <ul class="header__search-option">
                                 <li class="header__search-option-item header__search-option-item--active">
                                     <i class="header__search-option-item--arrow fa-solid fa-angle-left"></i>
                                     <span>Điện thoại</span>
                                     <i class="fa-solid fa-mobile-screen-button"></i>
                                 </li>
-                                <li class="header__search-option-item">
+                                <li class=" ">
                                     <i class="header__search-option-item--arrow fa-solid fa-angle-left"></i>
                                     <span>Laptop</span>
                                     <i class="fa-solid fa-laptop"></i>
@@ -106,6 +105,11 @@
                                     <i class="fa-solid fa-computer"></i>
                                 </li>
                             </ul>
+                            <ul class=" header__search-option-phone ">
+                                <span>Hãng điện thoại</span>
+                                <li class="header__search-option-item">Iphone</li>
+                                <li class="header__search-option-item">Samsung</li>
+                            </ul>
                         </div>
                         <button class="header__search-btn">
                             <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
@@ -117,10 +121,16 @@
                 </div>
             </div>
         </header>
-        <div class="container"></div>
+        <div id="product-list" class="product-item"></div>
     </div>
 
     <div class="footer"></div>
+    <!-- axios cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+        integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- my js -->
+    <script src="./controllers/index.js"></script>
 </body>
 
 </html>
