@@ -5,7 +5,7 @@ let productList = null;
 let fetchProductList = () => {
 
     axios({
-        url: "https://raw.githubusercontent.com/DZ2K-T/-CAPSTONE-JS_BC75/refs/heads/main/demo/product.json?timestamp=" + new Date().getTime(),
+        url: "https://6700f1ceb52042b542d65450.mockapi.io/api/v1/product?timestamp=" + new Date().getTime(),
         method: "GET",
     })
         .then((res) => {
