@@ -5,7 +5,7 @@ let productList = null;
 let fetchProductList = () => {
 
     axios({
-        url: "https://raw.githubusercontent.com/DZ2K-T/-CAPSTONE-JS_BC75/refs/heads/main/demo/product.json",
+        url: "https://raw.githubusercontent.com/DZ2K-T/-CAPSTONE-JS_BC75/refs/heads/main/demo/product.json?timestamp=" + new Date().getTime(),
         method: "GET",
     })
         .then((res) => {
