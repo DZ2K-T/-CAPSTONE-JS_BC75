@@ -328,6 +328,40 @@ p {
   margin: 0 0 20px 0;
 }
 
+.btn-add {
+  background-color: red;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-left: 90px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.header__cart-number {
+  position: absolute;
+  margin-left: 20px;
+  font-size: 20px;
+  background-color: orange;
+  width: 20px;
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.dropdown-content {
+  background-color: #c5c4c4;
+  width: 300px;
+  height: 100px;
+  margin-right: 10px;
+  position: absolute;
+}
+
+.btn_cancel {
+  width: 20px;
+  height: 20px;
+  margin-left: 280px;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

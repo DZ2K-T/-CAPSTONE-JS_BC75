@@ -1,5 +1,5 @@
 //gọi api lấy danh sách sp từ server
-const apiURL = "https://6700f1ceb52042b542d65450.mockapi.io/api/v1/product"; // Ví dụ: lấy sản phẩm
+// const apiURL = "https://6700f1ceb52042b542d65450.mockapi.io/api/v1/product"; // Ví dụ: lấy sản phẩm
 let renderProduct = (productList) => {
     let content = "";
     productList.forEach((product) => {
@@ -12,22 +12,48 @@ let renderProduct = (productList) => {
         <p>Camera sau: ${product.backCamera}</p>
         <p>Camera trước: ${product.frontCamera}</p>
         <p>Mô tả: ${product.desc}</p>
+        <button class ="btn-add" onclick="addProduct(${product.id})">Add to cart</button>
         </div>
 
         `
     });
     document.getElementById("product-list").innerHTML = content;
 }
-axios({
-    url: apiURL,
-    method: "GET",
-})
-    .then((res) => {
-        console.log("res:", res);
-        let productList = res.data
-        renderProduct(productList);
-        //render ui
+
+
+let addProduct = (id) => {
+    console.log(
+        "id:", id
+    );
+    axios({
+        url: `https://6700f1ceb52042b542d65450.mockapi.io/api/v1/product/${id}`,
+        method: "POST",
     })
-    .catch((err) => {
-        console.log("err:", err);
-    });
+        .then((res) => {
+            console.log("res:", res);
+
+        })
+        .catch((err) => {
+            console.log("err:", err);
+
+        });
+
+
+}
+let fetchProductList = () => {
+
+    axios({
+        url: "https://6700f1ceb52042b542d65450.mockapi.io/api/v1/product",
+        method: "GET",
+    })
+        .then((res) => {
+            console.log("res:", res);
+            let productList = res.data
+            renderProduct(productList);
+            //render ui
+        })
+        .catch((err) => {
+            console.log("err:", err);
+        });
+}
+fetchProductList();

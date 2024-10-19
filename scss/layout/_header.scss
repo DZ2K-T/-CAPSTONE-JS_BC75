@@ -1,6 +1,8 @@
 .header {
     height: 120px;
     background-image: linear-gradient(0, #d70018, #2a73dc);
+    
+   
 }
 
 .header__navbar {
@@ -308,3 +310,44 @@
 }
 
     
+//  .cart .dropdown{
+//     position: absolute;
+//     margin-left: 40px;
+//     margin-top: -10px;
+//     width: 88px;
+//     font-size: 20px;
+//     background-color: orange;
+// }
+
+.btn-add{
+    background-color: red;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: 90px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.header__cart-number{
+    position: absolute;
+    margin-left: 20px;
+    font-size: 20px;
+    background-color: orange;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.dropdown-content{
+    background-color: #c5c4c4;
+    width: 300px;
+    height: 100px;
+    margin-right: 10px ;
+    position: absolute;
+}
+.btn_cancel{
+    width: 20px;
+    height: 20px;
+    margin-left: 280px;
+}
